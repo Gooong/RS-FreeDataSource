@@ -7,7 +7,7 @@ Welcome to RS-FreeDataSource's documentation!
 =============================================
 
 
-hah
+你好
 ===============
 
 .. toctree::
