@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-遥感免费数据源介绍
+免费遥感数据源介绍
 =============================================
 
 前言
@@ -13,7 +13,7 @@
 
 
 .. Note::
-  由于资料有限，本文档初期只能覆盖常用的几个数据源，欢迎点击右上角``Edit on GitHub``，帮助完善或更新本文档内容。
+  由于资料有限，本文档初期只能覆盖常用的几个数据源，欢迎点击右上角 ``Edit on GitHub`` ，帮助完善或更新本文档内容。
 
 
 数描述范围
