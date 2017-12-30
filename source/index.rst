@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-免费遥感数据源介绍
+遥感免费数据源介绍
 =============================================
 
 前言
@@ -45,3 +45,6 @@
    :maxdepth: 2
 
    Landsat系列
+   MODIS
+   Sentinel Mission(哨兵系列)
+   中巴地球资源卫星(CBERS)
