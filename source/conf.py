@@ -46,7 +46,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'RS-FreeDataSource'
+project = 'RS Free Data Source'
 copyright = '2017, gongxr'
 author = 'gongxr'
 
@@ -164,6 +164,3 @@ texinfo_documents = [
      author, 'RS-FreeDataSource', 'One line description of project.',
      'Miscellaneous'),
 ]
-
-
-
