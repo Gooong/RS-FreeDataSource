@@ -70,9 +70,6 @@ B7        SW-IR    2.08 —2.35    30
 11	  11.5-12.5	  100
 =======  =============  =============
 
-
-
-
 下载方法
 ----------
 有两个下载源：`USUS EarthExplorer<https://earthexplorer.usgs.gov/>`_ 和 国内的`地理空间数据云<http://www.gscloud.cn/>`_，本文档介绍从USGS下载数据的方法：
