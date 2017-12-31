@@ -36,7 +36,8 @@
               href="genindex.html"/>
         <link rel="search" title="搜索" href="search.html"/>
     <link rel="top" title="RS Free Data Source 0.0.1 文档" href="index.html"/>
-        <link rel="prev" title="免费遥感数据源介绍" href="index.html"/> 
+        <link rel="next" title="MODIS" href="MODIS.html"/>
+        <link rel="prev" title="遥感免费数据源合集" href="index.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -93,15 +94,19 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Landsat系列</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#id1">数据概况</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#id3">卫星年表</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id4">卫星参数一览表</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#id4">波段介绍</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id5">下载方法</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id6">数据样例</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id7">常用领域</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id8">使用案例</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id5">波段介绍</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id6">下载方法</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id8">数据样例</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id9">常用领域</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id10">使用案例</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="MODIS.html">MODIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Sentinel Mission(哨兵系列).html">Sentinel Mission(哨兵系列)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="中巴地球资源卫星(CBERS).html">CBERS(中巴地球资源卫星)</a></li>
 </ul>
 
             
@@ -169,7 +174,7 @@
 <h1>Landsat系列<a class="headerlink" href="#landsat" title="永久链接至标题">¶</a></h1>
 <div class="section" id="id1">
 <h2>数据概况<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
-<p>陆地卫星计划是运行时间最长的地球观测计划，1972年7月23日地球资源卫星（Earth Resources Technology Satellite）发射，后来此卫星被改称为陆地卫星(LANDSAT)[1]，最新的陆地卫星是2013年2月11日发射的陆地卫星8号(LANDSAT 8)。<a class="footnote-reference" href="#id9" id="id2">[1]</a></p>
+<p>陆地卫星计划是运行时间最长的地球观测计划，1972年7月23日地球资源卫星（Earth Resources Technology Satellite）发射，后来此卫星被改称为陆地卫星(LANDSAT)[1]，最新的陆地卫星是2013年2月11日发射的陆地卫星8号(LANDSAT 8)。<a class="footnote-reference" href="#id11" id="id2">[1]</a></p>
 <div class="section" id="id3">
 <h3>卫星年表<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h3>
 <table border="1" class="docutils">
@@ -205,9 +210,149 @@
 </tbody>
 </table>
 </div>
-</div>
 <div class="section" id="id4">
-<h2>波段介绍<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h2>
+<h3>卫星参数一览表<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="9%" />
+<col width="7%" />
+<col width="20%" />
+<col width="7%" />
+<col width="14%" />
+<col width="21%" />
+<col width="5%" />
+<col width="10%" />
+<col width="6%" />
+<col width="1%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>卫星参数</td>
+<td>Landsat1</td>
+<td>Landsat2</td>
+<td>Landsat3</td>
+<td>Landsat4</td>
+<td>Landsat5</td>
+<td>Landsat6</td>
+<td>Landsat7</td>
+<td>Landsat8</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>发射时间</td>
+<td>1972.7.23</td>
+<td>1975.1.12</td>
+<td>1978.3.5</td>
+<td>1982.7.16</td>
+<td>1984.3</td>
+<td>1993.1</td>
+<td>1999.4.15</td>
+<td>2013.2.11</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>卫星高度</td>
+<td>920km</td>
+<td>920km</td>
+<td>920km</td>
+<td>705km</td>
+<td>705km</td>
+<td>发射失败</td>
+<td>705km</td>
+<td>705km</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>半主轴</td>
+<td>7285.438km</td>
+<td>7285.989 km</td>
+<td>7285.776 km</td>
+<td>7285.465 km</td>
+<td>7285.438 km</td>
+<td>&#160;</td>
+<td>7285.438km</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>倾角</td>
+<td>103.143</td>
+<td>103.155</td>
+<td>103.115</td>
+<td>98.9</td>
+<td>98.2</td>
+<td>&#160;</td>
+<td>98.2</td>
+<td>98.2</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>经过赤道的时间</td>
+<td>8:50am</td>
+<td>9:03am</td>
+<td>6:31am</td>
+<td>9:45am</td>
+<td>9:30am</td>
+<td>&#160;</td>
+<td>10:00am</td>
+<td>10:00am</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>覆盖周期</td>
+<td>18天</td>
+<td>18天</td>
+<td>18天</td>
+<td>16天</td>
+<td>16天</td>
+<td>&#160;</td>
+<td>16天</td>
+<td>16天</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>扫幅宽度</td>
+<td>185km</td>
+<td>185km</td>
+<td>185km</td>
+<td>185km</td>
+<td>185km</td>
+<td>&#160;</td>
+<td>185km</td>
+<td>185km</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>波段数</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>7</td>
+<td>7</td>
+<td>&#160;</td>
+<td>8</td>
+<td>9</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>机载传感器</td>
+<td>MSS</td>
+<td>MSS</td>
+<td>MSS</td>
+<td>MSS、TM</td>
+<td>MSS、TM</td>
+<td>&#160;</td>
+<td>ETM+</td>
+<td>OLI、TIRS</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>运行情况</td>
+<td>1978退役</td>
+<td>1976年失灵，1980年修复，1982年退役</td>
+<td>1983年退役</td>
+<td>1983年TM传感器失效，退役</td>
+<td>近29年的超期服役，2011年停止获取数据</td>
+<td>&#160;</td>
+<td>2003.5月出现故障</td>
+<td>在役服务</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="id5">
+<h2>波段介绍<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h2>
 <p>如今常用的卫星数据为Landsat5、Landsat7、Landsat8</p>
 <ul class="simple">
 <li>Landsat5</li>
@@ -274,7 +419,7 @@
 <col width="39%" />
 </colgroup>
 <thead valign="bottom">
-<tr class="row-odd"><th class="head">波段</th>
+<tr class="row-odd"><th class="head">波段号</th>
 <th class="head">波长范围(μm)</th>
 <th class="head">分辨率(m)</th>
 </tr>
@@ -377,9 +522,9 @@
 </tbody>
 </table>
 </div>
-<div class="section" id="id5">
-<h2>下载方法<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h2>
-<p>有两个下载源：<a class="reference external" href="https://earthexplorer.usgs.gov/">USUS EarthExplorer</a> 和国内的`地理空间数据云 &lt;<a class="reference external" href="http://www.gscloud.cn/">http://www.gscloud.cn/</a>&gt;`_，本文档介绍从USGS下载数据的方法：</p>
+<div class="section" id="id6">
+<h2>下载方法<a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h2>
+<p>有两个下载源：<a class="reference external" href="https://earthexplorer.usgs.gov/">USUS EarthExplorer</a> 和国内的 <a class="reference external" href="http://www.gscloud.cn/">地理空间数据云</a> ，本文档介绍从USGS下载数据的方法：</p>
 <ol class="arabic simple">
 <li>打开USUS EarthExplorer网站：<a class="reference external" href="https://earthexplorer.usgs.gov">https://earthexplorer.usgs.gov</a></li>
 <li>注册用户</li>
@@ -387,15 +532,57 @@
 <li>下载</li>
 </ol>
 </div>
-<div class="section" id="id6">
-<h2>数据样例<a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h2>
-</div>
-<div class="section" id="id7">
-<h2>常用领域<a class="headerlink" href="#id7" title="永久链接至标题">¶</a></h2>
-</div>
 <div class="section" id="id8">
-<h2>使用案例<a class="headerlink" href="#id8" title="永久链接至标题">¶</a></h2>
-<table class="docutils footnote" frame="void" id="id9" rules="none">
+<h2>数据样例<a class="headerlink" href="#id8" title="永久链接至标题">¶</a></h2>
+</div>
+<div class="section" id="id9">
+<h2>常用领域<a class="headerlink" href="#id9" title="永久链接至标题">¶</a></h2>
+<ul class="simple">
+<li>Landsat8常见波段组合形式</li>
+</ul>
+<table border="1" class="docutils">
+<colgroup>
+<col width="87%" />
+<col width="13%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>自然色（Natural Color）</td>
+<td>4 3 2</td>
+</tr>
+<tr class="row-even"><td>假彩色（False Color (urban))</td>
+<td>7 6 4</td>
+</tr>
+<tr class="row-odd"><td>红外彩色（Color Infrared (vegetation)）</td>
+<td>5 4 3</td>
+</tr>
+<tr class="row-even"><td>农业（Agriculture）</td>
+<td>6 5 2</td>
+</tr>
+<tr class="row-odd"><td>大气渗透（Atmospheric Penetration）</td>
+<td>7 6 5</td>
+</tr>
+<tr class="row-even"><td>健康植被（Healthy Vegetation）</td>
+<td>5 6 2</td>
+</tr>
+<tr class="row-odd"><td>陆地/水体（Land/Water）</td>
+<td>5 6 4</td>
+</tr>
+<tr class="row-even"><td>大气去除（Natural With Atmospheric Removal）</td>
+<td>7 5 3</td>
+</tr>
+<tr class="row-odd"><td>短波红外（Shortwave Infrared）</td>
+<td>7 5 4</td>
+</tr>
+<tr class="row-even"><td>植被分析（Vegetation Analysis）</td>
+<td>6 5 4</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id10">
+<h2>使用案例<a class="headerlink" href="#id10" title="永久链接至标题">¶</a></h2>
+<p>暂无，欢迎添加。</p>
+<table class="docutils footnote" frame="void" id="id11" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
 <tr><td class="label"><a class="fn-backref" href="#id2">[1]</a></td><td><a class="reference external" href="https://zh.wikipedia.org/zh-cn/%E9%99%B8%E5%9C%B0%E8%A1%9B%E6%98%9F%E8%A8%88%E7%95%AB">维基百科-陆地卫星计划</a></td></tr>
@@ -414,8 +601,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
+        <a href="MODIS.html" class="btn btn-neutral float-right" title="MODIS" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
-        <a href="index.html" class="btn btn-neutral" title="免费遥感数据源介绍" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+        <a href="index.html" class="btn btn-neutral" title="遥感免费数据源合集" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
