@@ -4,7 +4,7 @@ Landsat系列
 
 数据概况
 ----------
-陆地卫星计划是运行时间最长的地球观测计划，1972年7月23日地球资源卫星（Earth Resources Technology Satellite）发射，后来此卫星被改称为陆地卫星(LANDSAT)[1]，最新的陆地卫星是2013年2月11日发射的陆地卫星8号(LANDSAT 8)。[1]_
+陆地卫星计划是运行时间最长的地球观测计划，1972年7月23日地球资源卫星（Earth Resources Technology Satellite）发射，后来此卫星被改称为陆地卫星(LANDSAT)，最新的陆地卫星是2013年2月11日发射的陆地卫星8号(LANDSAT 8)。[1]_
 
 卫星年表
 ^^^^^^^^^
@@ -22,7 +22,7 @@ Landsat系列
 卫星参数一览表
 ^^^^^^^^^^^^^^^^^^^
 +----------------+------------+------------------------------------+-------------+--------------------------+--------------------------------------+----------+------------------+-----------+--+
-| 卫星参数       | Landsat1   | Landsat2                           | Landsat3    | Landsat4                 | Landsat5                             | Landsat6 | Landsat7         | Landsat8  |  |
+| 卫星           | Landsat1   | Landsat2                           | Landsat3    | Landsat4                 | Landsat5                             | Landsat6 | Landsat7         | Landsat8  |  |
 +----------------+------------+------------------------------------+-------------+--------------------------+--------------------------------------+----------+------------------+-----------+--+
 | 发射时间       | 1972.7.23  | 1975.1.12                          | 1978.3.5    | 1982.7.16                | 1984.3                               | 1993.1   | 1999.4.15        | 2013.2.11 |  |
 +----------------+------------+------------------------------------+-------------+--------------------------+--------------------------------------+----------+------------------+-----------+--+
@@ -100,12 +100,40 @@ B7        SW-IR    2.08 —2.35    30
 
 下载方法
 ----------
-有两个下载源：`USUS EarthExplorer <https://earthexplorer.usgs.gov/>`_ 和国内的 `地理空间数据云 <http://www.gscloud.cn/>`_ ，本文档介绍从USGS下载数据的方法：
+主要有三个途经可以下载：
 
-1. 打开USUS EarthExplorer网站：https://earthexplorer.usgs.gov
-2. 注册用户
-3. 选择范围
-4. 下载
+- `USUS EarthExplorer <https://earthexplorer.usgs.gov/>`_
+- `USGS Global Visualization Viewer(GloVis) <https://glovis.usgs.gov/>`_
+- `地理空间数据云 <http://www.gscloud.cn/>`_
+
+本文档介绍从USGS下载数据的方法：
+
+1. 打开USUS EarthExplorer网站：https://earthexplorer.usgs.gov，需要在右上角进行用户注册或登录
+
+.. image:: _static/img/Landsat/EarthExplorer.*
+
+2. 左侧标签栏点击"Search Criteria"，选择合适的影像范围和时间，可以通过搜索地点或输入坐标来选择范围
+
+.. image:: _static/img/Landsat/Select.*
+
+3. 影像时间和范围确定后，点击"DataSet"进入数据集选择菜单，在出现的数据列表中选择"Landsat"，并勾选自己想要下载的数据集
+
+.. image:: _static/img/Landsat/DataSet.*
+
+4. 数据集确定后，点击"Result"，即可查看查询结果；若想根据云量等继续筛选影像，点击"Additional Criteria"设置筛选条件
+
+.. image:: _static/img/Landsat/Result.*
+
+5. 查询结果如图所示，在每幅图像下点击“**购物车**”状符号即可将该图像加入订单；若对查询结果不满意，可以点击左上侧标签栏返回修改查询条件
+
+.. image:: _static/img/Landsat/SearchResult.*
+
+6. 随后点击"View Item Basket"-->"Proceed To Checkout"-->"Submit Order"，即可完成提交
+
+.. image:: _static/img/Landsat/ViewItemBasket.*
+
+7. 订单提交后，等待数据处理(可能会处理几天)，注意查看注册邮箱，一般USGS发送**第三封邮件**时会附带下载链接，链接存在有效时间，注意及时下载
+
 
 数据样例
 ----------

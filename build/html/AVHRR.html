@@ -1,0 +1,415 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>AVHRR &mdash; RS Free Data Source 0.0.1 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="索引"
+              href="genindex.html"/>
+        <link rel="search" title="搜索" href="search.html"/>
+    <link rel="top" title="RS Free Data Source 0.0.1 文档" href="index.html"/>
+        <link rel="next" title="CBERS(中巴地球资源卫星)" href="中巴地球资源卫星(CBERS).html"/>
+        <link rel="prev" title="Sentinel Mission(哨兵系列)" href="Sentinel Mission(哨兵系列).html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> RS Free Data Source
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Landsat系列.html">Landsat系列</a></li>
+<li class="toctree-l1"><a class="reference internal" href="MODIS.html">MODIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Sentinel Mission(哨兵系列).html">Sentinel Mission(哨兵系列)</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">AVHRR</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id1">数据概况</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#noaa">NOAA卫星年表</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">波段介绍</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">下载方法</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id5">常用领域</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id6">使用案例</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="中巴地球资源卫星(CBERS).html">CBERS(中巴地球资源卫星)</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">RS Free Data Source</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>AVHRR</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/AVHRR.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="avhrr">
+<h1>AVHRR<a class="headerlink" href="#avhrr" title="永久链接至标题">¶</a></h1>
+<div class="section" id="id1">
+<h2>数据概况<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
+<p>AVHRR，全称为Advanced Very High Resolution Radiometer，是NOAA系列气象卫星上搭载的传感器，从1979年TIROS-N卫星发射以来，NOAA系列卫星的AVHRR传感器就持续进行着对地观测任务。</p>
+<p>AVHRR传感器扫描角为±55.4°，相当于探测地面2800km宽的带状区域，两条轨道可以覆盖我国大部分国土，三条轨道可完全覆盖我国全部国土。 AVHRR的星下点分辨率为1.1km。由于扫描角大，图像边缘部分变形较大，实际上最有用的部分在±15°范围内（15°处地面分辨率为1.5km），这个范围的成象周期为6天。</p>
+<div class="section" id="noaa">
+<h3>NOAA卫星年表<a class="headerlink" href="#noaa" title="永久链接至标题">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="17%" />
+<col width="21%" />
+<col width="21%" />
+<col width="13%" />
+<col width="13%" />
+<col width="14%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>卫星</td>
+<td>发射时间</td>
+<td>正式运行时间</td>
+<td>轨道高度</td>
+<td>轨道倾角</td>
+<td>轨道周期</td>
+</tr>
+<tr class="row-even"><td>NOAA-11卫星</td>
+<td>1988年9月24日</td>
+<td>1988年11月8日</td>
+<td>841公里</td>
+<td>98.9度</td>
+<td>101.8分钟</td>
+</tr>
+<tr class="row-odd"><td>NOAA-12卫星</td>
+<td>1991年5月14日</td>
+<td>1991年9月17日</td>
+<td>804公里</td>
+<td>98.6度</td>
+<td>101.1分钟</td>
+</tr>
+<tr class="row-even"><td>NOAA-14卫星</td>
+<td>1994年12月30日</td>
+<td>1995年4月10日</td>
+<td>845公里</td>
+<td>99.1度</td>
+<td>101.9分钟</td>
+</tr>
+<tr class="row-odd"><td>NOAA-15卫星</td>
+<td>1998年5月13日</td>
+<td>1998年12月15日</td>
+<td>808公里</td>
+<td>98.6度</td>
+<td>101.2分钟</td>
+</tr>
+<tr class="row-even"><td>NOAA-16卫星</td>
+<td>2000年9月12日</td>
+<td>2001年3月20日</td>
+<td>850公里</td>
+<td>98.9度</td>
+<td>102.1分钟</td>
+</tr>
+<tr class="row-odd"><td>NOAA-17卫星</td>
+<td>2002年6月24日</td>
+<td>2002年10月15日</td>
+<td>811公里</td>
+<td>98.7度</td>
+<td>101.2分钟</td>
+</tr>
+<tr class="row-even"><td>NOAA-18卫星</td>
+<td>2005年5月11日</td>
+<td>2005年6月26日</td>
+<td>854公里</td>
+<td>99.0度</td>
+<td>102分钟</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="id2">
+<h2>波段介绍<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="9%" />
+<col width="18%" />
+<col width="17%" />
+<col width="57%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>波段号</td>
+<td>分辨率(星下点)</td>
+<td>波长(um)</td>
+<td>主要用途</td>
+</tr>
+<tr class="row-even"><td>1</td>
+<td>1.09 km</td>
+<td>0.58 - 0.68</td>
+<td>白天图像、植被、冰雪、气候</td>
+</tr>
+<tr class="row-odd"><td>2</td>
+<td>1.09 km</td>
+<td>0.725 - 1.00</td>
+<td>白天图像、植被、水/路边界、农业估产、土地利用调查</td>
+</tr>
+<tr class="row-even"><td>3A</td>
+<td>1.09 km</td>
+<td>1.58 - 1.64</td>
+<td>白天图像、土壤湿度、云雪判识、干旱监测、云相区分</td>
+</tr>
+<tr class="row-odd"><td>3B</td>
+<td>1.09 km</td>
+<td>3.55 - 3.93</td>
+<td>下垫面高温点、夜间云图、森林火灾、火山活动</td>
+</tr>
+<tr class="row-even"><td>4</td>
+<td>1.09 km</td>
+<td>10.30 - 11.30</td>
+<td>昼夜图像、海表和地表温度、土壤湿度</td>
+</tr>
+<tr class="row-odd"><td>5</td>
+<td>1.09 km</td>
+<td>11.50 - 12.50</td>
+<td>昼夜图像、海表和地表温度、土壤湿度</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id3">
+<h2>下载方法<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
+<p>主要有三个途经可以下载：</p>
+<ul class="simple">
+<li><a class="reference external" href="https://earthexplorer.usgs.gov/">USUS EarthExplorer</a></li>
+<li><a class="reference external" href="https://glovis.usgs.gov/">USGS Global Visualization Viewer(GloVis)</a></li>
+<li><a class="reference external" href="http://www.gscloud.cn/">地理空间数据云</a></li>
+</ul>
+<p>本文档介绍从USGS下载数据的方法：</p>
+<ol class="arabic simple">
+<li>打开USUS EarthExplorer网站：<a class="reference external" href="https://earthexplorer.usgs.gov">https://earthexplorer.usgs.gov</a>，需要在右上角进行用户注册或登录</li>
+</ol>
+<img alt="_images/EarthExplorer1.png" src="_images/EarthExplorer1.png" />
+<ol class="arabic simple" start="2">
+<li>左侧标签栏点击”Search Criteria”，选择合适的影像范围和时间，可以通过搜索地点或输入坐标来选择范围</li>
+</ol>
+<img alt="_images/Select1.png" src="_images/Select1.png" />
+<ol class="arabic simple" start="3">
+<li>影像时间和范围确定后，点击”DataSet”进入数据集选择菜单，在出现的数据列表中选择”Landsat”，并勾选自己想要下载的数据集</li>
+</ol>
+<img alt="_images/DataSet1.png" src="_images/DataSet1.png" />
+<ol class="arabic simple" start="4">
+<li>数据集确定后，点击”Result”，即可查看查询结果；若想根据云量等继续筛选影像，点击”Additional Criteria”设置筛选条件</li>
+</ol>
+<img alt="_images/Result1.png" src="_images/Result1.png" />
+<ol class="arabic simple" start="5">
+<li>查询结果如图所示，在每幅图像下点击黄色符号即可将该图像加入订单；若对查询结果不满意，可以点击左上侧标签栏返回修改查询条件</li>
+</ol>
+<img alt="_images/SearchResult1.png" src="_images/SearchResult1.png" />
+<ol class="arabic simple" start="6">
+<li>随后点击”View Item Basket”–&gt;”Proceed To Checkout”–&gt;”Submit Order”，即可完成提交并进行下载</li>
+</ol>
+</div>
+<hr class="docutils" />
+<div class="section" id="id5">
+<h2>常用领域<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h2>
+<p>见 <a class="reference internal" href="#id2">波段介绍</a></p>
+</div>
+<div class="section" id="id6">
+<h2>使用案例<a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h2>
+<p>暂无，欢迎 <a class="reference internal" href="index.html#id4"><span class="std std-ref">帮助完善文档</span></a></p>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="中巴地球资源卫星(CBERS).html" class="btn btn-neutral float-right" title="CBERS(中巴地球资源卫星)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="Sentinel Mission(哨兵系列).html" class="btn btn-neutral" title="Sentinel Mission(哨兵系列)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; 版权所有 2017, gongxr.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="_static/translations.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

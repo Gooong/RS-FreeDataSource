@@ -106,6 +106,7 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="MODIS.html">MODIS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Sentinel Mission(哨兵系列).html">Sentinel Mission(哨兵系列)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="AVHRR.html">AVHRR</a></li>
 <li class="toctree-l1"><a class="reference internal" href="中巴地球资源卫星(CBERS).html">CBERS(中巴地球资源卫星)</a></li>
 </ul>
 
@@ -174,7 +175,7 @@
 <h1>Landsat系列<a class="headerlink" href="#landsat" title="永久链接至标题">¶</a></h1>
 <div class="section" id="id1">
 <h2>数据概况<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
-<p>陆地卫星计划是运行时间最长的地球观测计划，1972年7月23日地球资源卫星（Earth Resources Technology Satellite）发射，后来此卫星被改称为陆地卫星(LANDSAT)[1]，最新的陆地卫星是2013年2月11日发射的陆地卫星8号(LANDSAT 8)。<a class="footnote-reference" href="#id11" id="id2">[1]</a></p>
+<p>陆地卫星计划是运行时间最长的地球观测计划，1972年7月23日地球资源卫星（Earth Resources Technology Satellite）发射，后来此卫星被改称为陆地卫星(LANDSAT)，最新的陆地卫星是2013年2月11日发射的陆地卫星8号(LANDSAT 8)。<a class="footnote-reference" href="#id11" id="id2">[1]</a></p>
 <div class="section" id="id3">
 <h3>卫星年表<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h3>
 <table border="1" class="docutils">
@@ -226,7 +227,7 @@
 <col width="1%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td>卫星参数</td>
+<tr class="row-odd"><td>卫星</td>
 <td>Landsat1</td>
 <td>Landsat2</td>
 <td>Landsat3</td>
@@ -524,12 +525,39 @@
 </div>
 <div class="section" id="id6">
 <h2>下载方法<a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h2>
-<p>有两个下载源：<a class="reference external" href="https://earthexplorer.usgs.gov/">USUS EarthExplorer</a> 和国内的 <a class="reference external" href="http://www.gscloud.cn/">地理空间数据云</a> ，本文档介绍从USGS下载数据的方法：</p>
+<p>主要有三个途经可以下载：</p>
+<ul class="simple">
+<li><a class="reference external" href="https://earthexplorer.usgs.gov/">USUS EarthExplorer</a></li>
+<li><a class="reference external" href="https://glovis.usgs.gov/">USGS Global Visualization Viewer(GloVis)</a></li>
+<li><a class="reference external" href="http://www.gscloud.cn/">地理空间数据云</a></li>
+</ul>
+<p>本文档介绍从USGS下载数据的方法：</p>
 <ol class="arabic simple">
-<li>打开USUS EarthExplorer网站：<a class="reference external" href="https://earthexplorer.usgs.gov">https://earthexplorer.usgs.gov</a></li>
-<li>注册用户</li>
-<li>选择范围</li>
-<li>下载</li>
+<li>打开USUS EarthExplorer网站：<a class="reference external" href="https://earthexplorer.usgs.gov">https://earthexplorer.usgs.gov</a>，需要在右上角进行用户注册或登录</li>
+</ol>
+<img alt="_images/EarthExplorer.png" src="_images/EarthExplorer.png" />
+<ol class="arabic simple" start="2">
+<li>左侧标签栏点击”Search Criteria”，选择合适的影像范围和时间，可以通过搜索地点或输入坐标来选择范围</li>
+</ol>
+<img alt="_images/Select.png" src="_images/Select.png" />
+<ol class="arabic simple" start="3">
+<li>影像时间和范围确定后，点击”DataSet”进入数据集选择菜单，在出现的数据列表中选择”Landsat”，并勾选自己想要下载的数据集</li>
+</ol>
+<img alt="_images/DataSet.png" src="_images/DataSet.png" />
+<ol class="arabic simple" start="4">
+<li>数据集确定后，点击”Result”，即可查看查询结果；若想根据云量等继续筛选影像，点击”Additional Criteria”设置筛选条件</li>
+</ol>
+<img alt="_images/Result.png" src="_images/Result.png" />
+<ol class="arabic simple" start="5">
+<li>查询结果如图所示，在每幅图像下点击“<strong>购物车</strong>”状符号即可将该图像加入订单；若对查询结果不满意，可以点击左上侧标签栏返回修改查询条件</li>
+</ol>
+<img alt="_images/SearchResult.png" src="_images/SearchResult.png" />
+<ol class="arabic simple" start="6">
+<li>随后点击”View Item Basket”–&gt;”Proceed To Checkout”–&gt;”Submit Order”，即可完成提交</li>
+</ol>
+<img alt="_images/ViewItemBasket.png" src="_images/ViewItemBasket.png" />
+<ol class="arabic simple" start="7">
+<li>订单提交后，等待数据处理(可能会处理几天)，注意查看注册邮箱，一般USGS发送**第三封邮件**时会附带下载链接，链接存在有效时间，注意及时下载</li>
 </ol>
 </div>
 <div class="section" id="id8">
