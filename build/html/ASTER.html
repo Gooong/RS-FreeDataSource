@@ -35,7 +35,8 @@
         <link rel="index" title="索引"
               href="genindex.html"/>
         <link rel="search" title="搜索" href="search.html"/>
-    <link rel="top" title="RS Free Data Source 0.0.1 文档" href="index.html"/> 
+    <link rel="top" title="RS Free Data Source 0.0.1 文档" href="index.html"/>
+        <link rel="prev" title="CBERS(中巴地球资源卫星)" href="CBERS.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -88,12 +89,27 @@
               
             
             
-              <ul>
+              <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="Landsat.html">Landsat系列</a></li>
 <li class="toctree-l1"><a class="reference internal" href="MODIS.html">MODIS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Sentinel.html">Sentinel(哨兵系列)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="AVHRR.html">AVHRR</a></li>
 <li class="toctree-l1"><a class="reference internal" href="CBERS.html">CBERS(中巴地球资源卫星)</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">ASTER</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id1">数据概况</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#terra">TERRA卫星参数</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">波段介绍</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id3">ASTER传感器波段情况</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">下载方法</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id5">数据处理</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id6">常用领域</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id7">使用案例</a></li>
+</ul>
+</li>
 </ul>
 
             
@@ -162,7 +178,14 @@
 <div class="section" id="id1">
 <h2>数据概况<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
 <p>ASTER是美国NASA（宇航局）与日本METI（经贸及工业部）合作并有两国的科学界、工业界积极参与的项目。它是Terra卫星上的一种高级光学传感器，包括了从可见光到热红外共14个光谱通道，可以为多个相关的地球环境资源研究领域提供科学、实用的卫星数据。</p>
-<p>Terra卫星（也被称为EOS-AM1卫星）于1999年12月18日发射升空，是EOS计划的第一颗卫星。Terra卫星上共有五种传感器，能同时采集地球大气、陆地、海洋和太阳能量平衡等信息：云与地球辐射能量系统CERES 、中分辨率成像光谱仪MODIS、多角度成像光谱仪MISR、先进星载热辐射与反射辐射计ASTER和对流层污染测量仪MOPITT。</p>
+<p>Terra卫星（也被称为EOS-AM1卫星）于1999年12月18日发射升空，是EOS计划的第一颗卫星。Terra卫星上共有五种传感器，能同时采集地球大气、陆地、海洋和太阳能量平衡等信息：</p>
+<ul class="simple">
+<li>云与地球辐射能量系统CERES</li>
+<li>中分辨率成像光谱仪MODIS</li>
+<li>多角度成像光谱仪MISR</li>
+<li>先进星载热辐射与反射辐射计ASTER</li>
+<li>对流层污染测量仪MOPITT</li>
+</ul>
 <div class="section" id="terra">
 <h3>TERRA卫星参数<a class="headerlink" href="#terra" title="永久链接至标题">¶</a></h3>
 <table border="1" class="docutils">
@@ -219,18 +242,68 @@
 </div>
 <div class="section" id="id2">
 <h2>波段介绍<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
-<p>ASTER传感器有三个谱段：可见光近红外谱段、短波红外谱段和热红外谱段。可见光近红外波段有4个，短波红外有6个，热红外波段有5个，共15个波段。ASTER数据分辨率为15至90米，扫描幅宽为60千米。
-+——————–+—————————————————+————–+—————-+
-| 卫星及传感器       | 波段数量                                          | 分辨率（米） | 扫描幅宽（千米 |
-+——————–+—————————————————+————–+—————-+
-| 卫星  | 传感器     | 全色 | 可见光 | 近红外 | 短波红外 | 热红外 | 雷达 | 最高  | 最低 | 垂直轨道方向   |
-+——-+————+——+——–+——–+———-+——–+——+——-+——+—————-+
-| Terra | ASTER VNIR | -    | 2      | 2      | -        | -      | -    | 15    | 15   | 60             |
-+       +————+——+——–+——–+———-+——–+——+——-+——+—————-+
-|       | ASTER SWIR | -    | -      | -      | 6        | -      | -    | 30    | 30   | 60             |
-+       +————+——+——–+——–+———-+——–+——+——-+——+—————-+
-|       | ASTER TIR  | -    | -      | -      | -        | 5      | -    | 90    | 90   | 60             |
-+——-+————+——+——–+——–+———-+——–+——+——-+——+—————-+</p>
+<p>ASTER传感器有三个谱段：可见光近红外谱段、短波红外谱段和热红外谱段。可见光近红外波段有4个，短波红外有6个，热红外波段有5个，共15个波段。ASTER数据分辨率为15至90米，扫描幅宽为60千米。</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="7%" />
+<col width="13%" />
+<col width="6%" />
+<col width="9%" />
+<col width="9%" />
+<col width="11%" />
+<col width="9%" />
+<col width="6%" />
+<col width="7%" />
+<col width="6%" />
+<col width="17%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td colspan="2">卫星及传感器</td>
+<td colspan="6">波段数量</td>
+<td colspan="2">分辨率（米）</td>
+<td>扫描幅宽（千米</td>
+</tr>
+<tr class="row-even"><td colspan="2">卫星  | 传感器</td>
+<td colspan="6">全色 | 可见光 | 近红外 | 短波红外 | 热红外 | 雷达</td>
+<td colspan="2">最高  | 最低</td>
+<td>垂直轨道方向</td>
+</tr>
+<tr class="row-odd"><td rowspan="3">Terra</td>
+<td>ASTER VNIR</td>
+<td>－</td>
+<td>2</td>
+<td>2</td>
+<td>－</td>
+<td>－</td>
+<td>－</td>
+<td>15</td>
+<td>15</td>
+<td>60</td>
+</tr>
+<tr class="row-even"><td>ASTER SWIR</td>
+<td>－</td>
+<td>－</td>
+<td>－</td>
+<td>6</td>
+<td>－</td>
+<td>－</td>
+<td>30</td>
+<td>30</td>
+<td>60</td>
+</tr>
+<tr class="row-odd"><td>ASTER TIR</td>
+<td>－</td>
+<td>－</td>
+<td>－</td>
+<td>－</td>
+<td>5</td>
+<td>－</td>
+<td>90</td>
+<td>90</td>
+<td>60</td>
+</tr>
+</tbody>
+</table>
 <div class="section" id="id3">
 <h3>ASTER传感器波段情况<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h3>
 <table border="1" class="docutils">
@@ -344,15 +417,46 @@
 </div>
 <div class="section" id="id4">
 <h2>下载方法<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h2>
+<p>在 <a class="reference external" href="https://asterweb.jpl.nasa.gov/data.asp">AsterWeb</a> 网站列出了几个下载源，本文档介绍从USGS下载数据的方法：</p>
+<ol class="arabic simple">
+<li>打开USUS EarthExplorer网站：<a class="reference external" href="https://earthexplorer.usgs.gov">https://earthexplorer.usgs.gov</a>，需要在右上角进行用户注册或登录</li>
+</ol>
+<div class="admonition tip">
+<p class="first admonition-title">小技巧</p>
+<p class="last">使用gmail或学校邮箱邮箱进行注册，收邮件可能会快一些</p>
+</div>
+<img alt="_images/EarthExplorer2.png" src="_images/EarthExplorer2.png" />
+<ol class="arabic simple" start="2">
+<li>左侧标签栏点击”Search Criteria”，选择合适的影像范围和时间，可以通过搜索地点或输入坐标来选择范围</li>
+</ol>
+<img alt="_images/Select2.png" src="_images/Select2.png" />
+<ol class="arabic simple" start="3">
+<li>影像时间和范围确定后，点击”DataSet”进入数据集选择菜单，在出现的数据列表中选择”Landsat”，并勾选自己想要下载的数据集</li>
+</ol>
+<img alt="_images/DataSet2.png" src="_images/DataSet2.png" />
+<ol class="arabic simple" start="4">
+<li>数据集确定后，点击”Result”，即可查看查询结果；若想根据云量等继续筛选影像，点击”Additional Criteria”设置筛选条件</li>
+</ol>
+<img alt="_images/Result2.png" src="_images/Result2.png" />
+<ol class="arabic simple" start="5">
+<li>查询结果如图所示，在每幅图像下点击下载符号即可进行下载</li>
+</ol>
+<img alt="_images/Download.png" src="_images/Download.png" />
 </div>
 <div class="section" id="id5">
-<h2>数据样例<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h2>
+<h2>数据处理<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h2>
+<p>ASTER数据格式主要为HDF，可使用ENVI软件打开</p>
 </div>
 <div class="section" id="id6">
 <h2>常用领域<a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h2>
+<ul class="simple">
+<li>在科研领域，ASTER数据可被用于监测活火山的活动规律、监测海岸线的侵蚀和下沉状况、热带雨林地区的植被监测、海洋珊瑚、暗礁地图的测量、分析沿海地带的海平面温度变化、极地雪川、冰河以及云量的研究</li>
+<li>在应用领域，ASTER数据可被用于农作物估产、土壤质量调查、森林以及平原火灾的调查、野生动物生活环境的调查、地形图的制作、土地使用状况分类、城市发展动态监测、交通和运输路线调查、近海和近河地区的洪水监测、地质特征、地质特征分类、岩石记述学、岩石和土壤的界定、火山分布状况调查、水资源调查、石油泄漏以及其它污染的调查、大气环境监测、水污染监测及土壤污染分布调查。</li>
+</ul>
 </div>
 <div class="section" id="id7">
 <h2>使用案例<a class="headerlink" href="#id7" title="永久链接至标题">¶</a></h2>
+<p>暂无，欢迎 <a class="reference internal" href="index.html#id4"><span class="std std-ref">帮助完善文档</span></a></p>
 </div>
 </div>
 
@@ -363,6 +467,13 @@
            </div>
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="CBERS.html" class="btn btn-neutral" title="CBERS(中巴地球资源卫星)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>

@@ -130,7 +130,7 @@ B7        SW-IR    2.08 —2.35    30
 
 下载方法
 ----------
-主要有三个途经可以下载：
+主要有三个网站可以下载：
 
 - `USUS EarthExplorer <https://earthexplorer.usgs.gov/>`_
 - `USGS Global Visualization Viewer(GloVis) <https://glovis.usgs.gov/>`_
