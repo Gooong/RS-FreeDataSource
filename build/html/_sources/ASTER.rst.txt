@@ -109,7 +109,7 @@ ASTER传感器波段情况
 
 下载方法
 ----------
-在 `AsterWeb <https://asterweb.jpl.nasa.gov/data.asp>`_ 网站列出了几个下载源，本文档介绍从USGS下载数据的方法：
+在 `AsterWeb <https://asterweb.jpl.nasa.gov/data.asp>`_ 网站列出了几个下载源，本文档介绍从USGS EarthExplorer下载数据的方法：
 
 1. 打开USUS EarthExplorer网站：https://earthexplorer.usgs.gov，需要在右上角进行用户注册或登录
 
