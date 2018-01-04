@@ -52,3 +52,4 @@
    Sentinel
    AVHRR
    CBERS
+   ASTER
