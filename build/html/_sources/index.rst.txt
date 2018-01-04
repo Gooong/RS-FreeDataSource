@@ -49,6 +49,6 @@
 
    Landsat
    MODIS
-   SentinelMission
+   Sentinel
    AVHRR
    CBERS
