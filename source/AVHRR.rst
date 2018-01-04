@@ -65,6 +65,9 @@ NOAA卫星年表
 
 1. 打开USUS EarthExplorer网站：https://earthexplorer.usgs.gov，需要在右上角进行用户注册或登录
 
+.. Tip::
+  使用gmail或学校邮箱邮箱进行注册，收邮件可能会快一些
+
 .. image:: _static/img/AVHRR/EarthExplorer.*
 
 2. 左侧标签栏点击"Search Criteria"，选择合适的影像范围和时间，可以通过搜索地点或输入坐标来选择范围

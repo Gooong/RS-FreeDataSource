@@ -28,7 +28,7 @@
 
 帮助完善文档
 ^^^^^^^^^^^^^^^^
-由于资料有限，初期文档只能覆盖常用的几个数据源，如果你有更多的资料，欢迎帮助完善或更新文档内容，点击右上角 ``Edit on GitHub`` 进入 `GitHub  <https://github.com/Gooong/RS-FreeDataSource>`_ 即可进行编辑讨论。
+由于资料有限，初期文档只能覆盖常用的几个数据源，欢迎帮助完善或更新文档内容，点击右上角 ``Edit on GitHub`` 进入 `GitHub  <https://github.com/Gooong/RS-FreeDataSource>`_ 即可进行编辑讨论。
 
 
 版权声明
@@ -47,8 +47,8 @@
 .. toctree::
    :maxdepth: 2
 
-   Landsat系列
+   Landsat
    MODIS
-   Sentinel Mission(哨兵系列)
+   SentinelMission
    AVHRR
-   中巴地球资源卫星(CBERS)
+   CBERS

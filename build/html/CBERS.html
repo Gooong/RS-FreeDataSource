@@ -1,0 +1,618 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>CBERS(中巴地球资源卫星) &mdash; RS Free Data Source 0.0.1 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="索引"
+              href="genindex.html"/>
+        <link rel="search" title="搜索" href="search.html"/>
+    <link rel="top" title="RS Free Data Source 0.0.1 文档" href="index.html"/>
+        <link rel="prev" title="AVHRR" href="AVHRR.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> RS Free Data Source
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Landsat.html">Landsat系列</a></li>
+<li class="toctree-l1"><a class="reference internal" href="MODIS.html">MODIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SentinelMission.html">Sentinel Mission(哨兵系列)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="AVHRR.html">AVHRR</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">CBERS(中巴地球资源卫星)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id1">数据概况</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id2">卫星参数</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">波段介绍</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#cbers-01-02">CBERS-01/02</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cbers-02b">CBERS-02B</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#zy-1-02c">ZY-1 02C</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cbers-04">CBERS-04</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">常用领域</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id5">下载方法</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id8">数据处理</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id9">使用案例</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">RS Free Data Source</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>CBERS(中巴地球资源卫星)</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/CBERS.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="cbers">
+<h1>CBERS(中巴地球资源卫星)<a class="headerlink" href="#cbers" title="永久链接至标题">¶</a></h1>
+<div class="section" id="id1">
+<h2>数据概况<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
+<p>中巴地球资源卫星（CBERS，又称资源一号）是中国第一代传输型地球资源卫星，包含中巴地球资源卫星01星、02星、02B星（均已退役）、02C星和04星五颗卫星组成</p>
+<div class="section" id="id2">
+<h3>卫星参数<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="21%" />
+<col width="26%" />
+<col width="26%" />
+<col width="26%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>卫星</td>
+<td>CBERS-01/02/02B</td>
+<td>ZY-1-02C</td>
+<td>CBERS-04</td>
+</tr>
+<tr class="row-even"><td>轨道类型</td>
+<td>太阳同步回归轨道</td>
+<td>太阳同步回归轨道</td>
+<td>太阳同步回归轨道</td>
+</tr>
+<tr class="row-odd"><td>轨道高度</td>
+<td>778km</td>
+<td>780.099km</td>
+<td>778km</td>
+</tr>
+<tr class="row-even"><td>轨道倾角</td>
+<td>98.5°</td>
+<td>98.5°</td>
+<td>98.5°</td>
+</tr>
+<tr class="row-odd"><td>降交点地方时</td>
+<td>10:30 AM</td>
+<td>10:30 AM</td>
+<td>10:30 AM</td>
+</tr>
+<tr class="row-even"><td>回归周期</td>
+<td>26天</td>
+<td>55天</td>
+<td>26天</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="id3">
+<h2>波段介绍<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
+<div class="section" id="cbers-01-02">
+<h3>CBERS-01/02<a class="headerlink" href="#cbers-01-02" title="永久链接至标题">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="27%" />
+<col width="8%" />
+<col width="14%" />
+<col width="15%" />
+<col width="10%" />
+<col width="10%" />
+<col width="15%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>有效载荷</td>
+<td>波段号</td>
+<td>光谱范围(μm)</td>
+<td>空间分辨率(m)</td>
+<td>幅宽(km)</td>
+<td>侧摆能力</td>
+<td>重访时间 (天)</td>
+</tr>
+<tr class="row-even"><td rowspan="5">CCD相机</td>
+<td>1</td>
+<td>0.45～0.52</td>
+<td rowspan="5">20</td>
+<td rowspan="5">113</td>
+<td rowspan="5">±32°</td>
+<td rowspan="5">3</td>
+</tr>
+<tr class="row-odd"><td>2</td>
+<td>0.52～0.59</td>
+</tr>
+<tr class="row-even"><td>3</td>
+<td>0.63～0.69</td>
+</tr>
+<tr class="row-odd"><td>4</td>
+<td>0.77～0.89</td>
+</tr>
+<tr class="row-even"><td>5</td>
+<td>0.51～0.73</td>
+</tr>
+<tr class="row-odd"><td rowspan="2">宽视场成像仪(WFI)</td>
+<td>6</td>
+<td>0.63～0.69</td>
+<td rowspan="2">258</td>
+<td rowspan="2">890</td>
+<td rowspan="2">—</td>
+<td rowspan="2">3</td>
+</tr>
+<tr class="row-even"><td>7</td>
+<td>0.77～0.89</td>
+</tr>
+<tr class="row-odd"><td rowspan="4">红外多光谱扫描仪 (IRMSS)</td>
+<td>8</td>
+<td>0.50～0.90</td>
+<td rowspan="3">78</td>
+<td rowspan="4">119.5</td>
+<td rowspan="4">—</td>
+<td rowspan="4">26</td>
+</tr>
+<tr class="row-even"><td>9</td>
+<td>1.55～1.75</td>
+</tr>
+<tr class="row-odd"><td>10</td>
+<td>2.08～2.35</td>
+</tr>
+<tr class="row-even"><td>11</td>
+<td>10.4～12.5</td>
+<td>156</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="cbers-02b">
+<h3>CBERS-02B<a class="headerlink" href="#cbers-02b" title="永久链接至标题">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="21%" />
+<col width="9%" />
+<col width="15%" />
+<col width="16%" />
+<col width="11%" />
+<col width="11%" />
+<col width="16%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>有效载荷</td>
+<td>谱段号</td>
+<td>光谱范围(μm)</td>
+<td>空间分辨率(m)</td>
+<td>幅宽(km)</td>
+<td>侧摆能力</td>
+<td>重访时间 (天)</td>
+</tr>
+<tr class="row-even"><td rowspan="5">CCD相机</td>
+<td>1</td>
+<td>0.45～0.52</td>
+<td rowspan="5">20</td>
+<td rowspan="5">113</td>
+<td rowspan="5">±32°</td>
+<td rowspan="5">3</td>
+</tr>
+<tr class="row-odd"><td>2</td>
+<td>0.52～0.59</td>
+</tr>
+<tr class="row-even"><td>3</td>
+<td>0.63～0.69</td>
+</tr>
+<tr class="row-odd"><td>4</td>
+<td>0.77～0.89</td>
+</tr>
+<tr class="row-even"><td>5</td>
+<td>0.51～0.73</td>
+</tr>
+<tr class="row-odd"><td>高分辨率相机(HR)</td>
+<td>6</td>
+<td>0.50～0.80</td>
+<td>2.36</td>
+<td>27</td>
+<td>±25°</td>
+<td>3</td>
+</tr>
+<tr class="row-even"><td rowspan="2">宽视场成像仪(WFI)</td>
+<td>7</td>
+<td>0.63～0.69</td>
+<td rowspan="2">258</td>
+<td rowspan="2">890</td>
+<td rowspan="2">±25°</td>
+<td rowspan="2">3</td>
+</tr>
+<tr class="row-odd"><td>8</td>
+<td>0.77～0.89</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="zy-1-02c">
+<h3>ZY-1 02C<a class="headerlink" href="#zy-1-02c" title="永久链接至标题">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="11%" />
+<col width="9%" />
+<col width="16%" />
+<col width="17%" />
+<col width="21%" />
+<col width="11%" />
+<col width="16%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>有效载荷</td>
+<td>谱段号</td>
+<td>光谱范围(µm)</td>
+<td>空间分辨率(m)</td>
+<td>幅宽(km)</td>
+<td>侧摆能力</td>
+<td>重访时间(天)</td>
+</tr>
+<tr class="row-even"><td rowspan="4">P/MS相机</td>
+<td>1</td>
+<td>0.51～0.85</td>
+<td>5</td>
+<td rowspan="4">60</td>
+<td rowspan="4">±32°</td>
+<td rowspan="4">3</td>
+</tr>
+<tr class="row-odd"><td>2</td>
+<td>0.52～0.59</td>
+<td rowspan="3">10</td>
+</tr>
+<tr class="row-even"><td>3</td>
+<td>0.63～0.69</td>
+</tr>
+<tr class="row-odd"><td>4</td>
+<td>0.77～0.89</td>
+</tr>
+<tr class="row-even"><td>HR相机</td>
+<td>－</td>
+<td>0.50～0.80</td>
+<td>2.36</td>
+<td>单台：27 两台：54</td>
+<td>±25°</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="cbers-04">
+<h3>CBERS-04<a class="headerlink" href="#cbers-04" title="永久链接至标题">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="18%" />
+<col width="9%" />
+<col width="17%" />
+<col width="18%" />
+<col width="11%" />
+<col width="9%" />
+<col width="18%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>载荷</td>
+<td>谱段号</td>
+<td>谱段范围 (µm)</td>
+<td>空间分辨率 (m)</td>
+<td>幅宽(km)</td>
+<td>侧摆角</td>
+<td>重访时间（天）</td>
+</tr>
+<tr class="row-even"><td rowspan="4">全色多光谱相机</td>
+<td>1</td>
+<td>0.51～0.85</td>
+<td>5</td>
+<td rowspan="4">60</td>
+<td rowspan="4">±32°</td>
+<td rowspan="4">3</td>
+</tr>
+<tr class="row-odd"><td>2</td>
+<td>0.52～0.59</td>
+<td rowspan="3">10</td>
+</tr>
+<tr class="row-even"><td>3</td>
+<td>0.63～0.69</td>
+</tr>
+<tr class="row-odd"><td>4</td>
+<td>0.77～0.89</td>
+</tr>
+<tr class="row-even"><td rowspan="4">多光谱相机</td>
+<td>5</td>
+<td>0.45～0.52</td>
+<td rowspan="4">20</td>
+<td rowspan="4">120</td>
+<td rowspan="4">—</td>
+<td rowspan="4">26</td>
+</tr>
+<tr class="row-odd"><td>6</td>
+<td>0.52～0.59</td>
+</tr>
+<tr class="row-even"><td>7</td>
+<td>0.63～0.69</td>
+</tr>
+<tr class="row-odd"><td>8</td>
+<td>0.77～0.89</td>
+</tr>
+<tr class="row-even"><td rowspan="4">红外多光谱相机</td>
+<td>9</td>
+<td>0.50～0.90</td>
+<td rowspan="3">40</td>
+<td rowspan="4">120</td>
+<td rowspan="4">—</td>
+<td rowspan="4">26</td>
+</tr>
+<tr class="row-odd"><td>10</td>
+<td>1.55～1.75</td>
+</tr>
+<tr class="row-even"><td>11</td>
+<td>2.08～2.35</td>
+</tr>
+<tr class="row-odd"><td>12</td>
+<td>10.4～12.5</td>
+<td>80</td>
+</tr>
+<tr class="row-even"><td rowspan="4">宽视场成像仪</td>
+<td>13</td>
+<td>0.45～0.52</td>
+<td rowspan="4">73</td>
+<td rowspan="4">866</td>
+<td rowspan="4">—</td>
+<td rowspan="4">3</td>
+</tr>
+<tr class="row-odd"><td>14</td>
+<td>0.52～0.59</td>
+</tr>
+<tr class="row-even"><td>15</td>
+<td>0.63～0.69</td>
+</tr>
+<tr class="row-odd"><td>16</td>
+<td>0.77～0.89</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="id4">
+<h2>常用领域<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h2>
+<ul class="simple">
+<li>监测国土资源的变化，每年更新全国利用图</li>
+<li>测量耕地面积，估计森林蓄积量，农作物长势、产量和草场载蓄量及每年变化</li>
+<li>监测自然和人为灾害</li>
+<li>查清洪涝、地震、林火和风沙等破坏情况</li>
+<li>对沿海经济开发、滩涂利用、水产养殖、环境污染提供动态情报</li>
+<li>同时勘探地下资源、圈定黄金、石油、煤炭和建材等资源区</li>
+</ul>
+</div>
+<div class="section" id="id5">
+<h2>下载方法<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h2>
+<p>本文档介绍从 <a class="reference external" href="http://www.cresda.com/CN/index.shtml">中国资源卫星应用中心</a> 下载方法：</p>
+<ol class="arabic simple">
+<li>打开 <a class="reference external" href="http://www.cresda.com/CN/index.shtml">中国资源卫星应用中心</a> 网站，点击顶栏的”数据服务–&gt;查询系统”进入”陆地观测卫星数据服务平台”</li>
+</ol>
+<img alt="_images/Website.png" src="_images/Website.png" />
+<ol class="arabic simple" start="2">
+<li>然后按照流程进行注册、检索、提交和下载</li>
+</ol>
+<div class="admonition important">
+<p class="first admonition-title">重要</p>
+<p class="last">需要提供单位组织机构代码才能过进行注册</p>
+</div>
+<img alt="_images/Procedure.jpg" src="_images/Procedure.jpg" />
+</div>
+<div class="section" id="id8">
+<h2>数据处理<a class="headerlink" href="#id8" title="永久链接至标题">¶</a></h2>
+<p>暂无，欢迎 <a class="reference internal" href="index.html#id4"><span class="std std-ref">帮助完善文档</span></a></p>
+</div>
+<div class="section" id="id9">
+<h2>使用案例<a class="headerlink" href="#id9" title="永久链接至标题">¶</a></h2>
+<p>暂无，欢迎 <a class="reference internal" href="index.html#id4"><span class="std std-ref">帮助完善文档</span></a></p>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="AVHRR.html" class="btn btn-neutral" title="AVHRR" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; 版权所有 2017, gongxr.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="_static/translations.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
