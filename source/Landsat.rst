@@ -161,7 +161,7 @@ B7        SW-IR    2.08 —2.35    30
 
 .. image:: _static/img/Landsat/SearchResult.*
 
-6. 随后点击"View Item Basket"-->"Proceed To Checkout"-->"Submit Order"，即可完成提交
+6. 随后点击**"View Item Basket"-->"Proceed To Checkout"-->"Submit Order"**，即可完成提交
 
 .. image:: _static/img/Landsat/ViewItemBasket.*
 
