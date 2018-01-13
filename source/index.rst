@@ -39,7 +39,7 @@
 
 本文档为开源作品，内容来自于多位贡献者，欢迎个人下载编辑本文档，但不可用于商业用途，转载需注明来源。
 
-- 文档链接：http://rs-freedatasource.readthedocs.io/zh/latest/
+- 文档链接：http://rs-freedatasource.readthedocs.io
 - GitHub地址：https://github.com/Gooong/RS-FreeDataSource
 
 
