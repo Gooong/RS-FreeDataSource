@@ -37,7 +37,7 @@
         <link rel="search" title="搜索" href="search.html"/>
     <link rel="top" title="RS Free Data Source 0.0.1 文档" href="index.html"/>
         <link rel="next" title="AVHRR" href="AVHRR.html"/>
-        <link rel="prev" title="MODIS" href="MODIS.html"/> 
+        <link rel="prev" title="MODIS 传感器" href="MODIS.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -92,19 +92,19 @@
             
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="Landsat.html">Landsat系列</a></li>
-<li class="toctree-l1"><a class="reference internal" href="MODIS.html">MODIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="MODIS.html">MODIS 传感器</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Sentinel(哨兵系列)</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#id1">数据概况</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#id2">波段介绍</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id3">下载方法</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id4">数据样例</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id5">常用领域</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">常用领域</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">下载方法</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id5">数据处理</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#id6">使用案例</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="AVHRR.html">AVHRR</a></li>
 <li class="toctree-l1"><a class="reference internal" href="CBERS.html">CBERS(中巴地球资源卫星)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ASTER.html">ASTER传感器</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ASTER.html">ASTER 传感器</a></li>
 </ul>
 
             
@@ -172,21 +172,147 @@
 <h1>Sentinel(哨兵系列)<a class="headerlink" href="#sentinel" title="永久链接至标题">¶</a></h1>
 <div class="section" id="id1">
 <h2>数据概况<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
+<p>“哨兵”系列卫星是欧洲哥白尼（Copernicus）计划[之前称为“全球环境与安全监测”（GMES）计划]空间部分（GSC）的专用卫星系列，由欧洲委员会（EC）投资，欧洲航天局（ESA）研制。“哨兵”系列卫星主要包括2颗哨兵－1卫星、2颗哨兵－2卫星、2颗哨兵－3卫星、2个哨兵－4载荷、2个哨兵－5载荷、1颗哨兵－5的先导星——哨兵－5P，以及1颗哨兵－6卫星。</p>
+<ul class="simple">
+<li>哨兵－1卫星是全天时、全天候雷达成像任务，用于陆地和海洋观测，首颗哨兵－1A卫星已于2014年4月3日发射。</li>
+<li>哨兵－2卫星是多光谱高分辨率成像任务，用于陆地监测，可提供植被、土壤和水覆盖、内陆水路及海岸区域等图像，还可用于紧急救援服务。</li>
+<li>哨兵－3卫星携带多种有效载荷，用于高精度测量海面地形、海面和地表温度、海洋水色和土壤特性，还将支持海洋预报系统及环境与气候监测。</li>
+<li>哨兵－4载荷专用于大气化学成分监测，将搭载在第三代气象卫星－S（MTG－S）上。</li>
+<li>哨兵－5载荷用于监测大气环境，将搭载在欧洲第二代“气象业务”（MetOp）卫星上。</li>
+<li>哨兵－5P卫星用于减小欧洲“环境卫星”（Envisat）和哨兵－5载荷之间的数据缺口。</li>
+<li>哨兵－6卫星是贾森－3（Jason－3）海洋卫星的后续任务，将携带雷达高度计，用于测量全球海面高度，主要用于海洋科学和气候研究。</li>
+</ul>
+<div class="admonition tip">
+<p class="first admonition-title">小技巧</p>
+<p class="last">关于Sentinel系列卫星更详细的信息，可以访问 <a class="reference external" href="https://sentinel.esa.int/web/sentinel/missions">“`ESA Sentinel Online</a> 网站查看。</p>
+</div>
 </div>
 <div class="section" id="id2">
 <h2>波段介绍<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<ul class="simple">
+<li>Sentinel-2</li>
+</ul>
+<table border="1" class="docutils">
+<colgroup>
+<col width="34%" />
+<col width="29%" />
+<col width="18%" />
+<col width="18%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>Sentinel-2 Bands</td>
+<td>Central Wavelength (µm)</td>
+<td>Resolution (m)</td>
+<td>Bandwidth (nm)</td>
+</tr>
+<tr class="row-even"><td>Band 1 – Coastal aerosol</td>
+<td>0.443</td>
+<td>60</td>
+<td>20</td>
+</tr>
+<tr class="row-odd"><td>Band 2 – Blue</td>
+<td>0.490</td>
+<td>10</td>
+<td>65</td>
+</tr>
+<tr class="row-even"><td>Band 3 – Green</td>
+<td>0.560</td>
+<td>10</td>
+<td>35</td>
+</tr>
+<tr class="row-odd"><td>Band 4 – Red</td>
+<td>0.665</td>
+<td>10</td>
+<td>30</td>
+</tr>
+<tr class="row-even"><td>Band 5 – Vegetation Red Edge</td>
+<td>0.705</td>
+<td>20</td>
+<td>15</td>
+</tr>
+<tr class="row-odd"><td>Band 6 – Vegetation Red Edge</td>
+<td>0.740</td>
+<td>20</td>
+<td>15</td>
+</tr>
+<tr class="row-even"><td>Band 7 – Vegetation Red Edge</td>
+<td>0.783</td>
+<td>20</td>
+<td>20</td>
+</tr>
+<tr class="row-odd"><td>Band 8 – NIR</td>
+<td>0.842</td>
+<td>10</td>
+<td>115</td>
+</tr>
+<tr class="row-even"><td>Band 8A – Narrow NIR</td>
+<td>0.865</td>
+<td>20</td>
+<td>20</td>
+</tr>
+<tr class="row-odd"><td>Band 9 – Water vapour</td>
+<td>0.945</td>
+<td>60</td>
+<td>20</td>
+</tr>
+<tr class="row-even"><td>Band 10 – SWIR – Cirrus</td>
+<td>1.375</td>
+<td>60</td>
+<td>20</td>
+</tr>
+<tr class="row-odd"><td>Band 11 – SWIR</td>
+<td>1.610</td>
+<td>20</td>
+<td>90</td>
+</tr>
+<tr class="row-even"><td>Band 12 – SWIR</td>
+<td>2.190</td>
+<td>20</td>
+<td>180</td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="section" id="id3">
-<h2>下载方法<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
+<h2>常用领域<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
+<p>哨兵－2卫星是多光谱高分辨率成像任务，用于陆地监测，可提供植被、土壤和水覆盖、内陆水路及海岸区域等图像，还可用于紧急救援服务。</p>
 </div>
 <div class="section" id="id4">
-<h2>数据样例<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h2>
+<h2>下载方法<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h2>
+<p>从 <a class="reference external" href="https://scihub.copernicus.eu/">ESA SCI Hub</a> 下载 Sentinel-1,Sentinel-2,Sentinel-3 数据：</p>
+<ol class="arabic simple">
+<li>进入ESA SCI Hub网站：<a class="reference external" href="https://scihub.copernicus.eu/">https://scihub.copernicus.eu/</a> ，点击”Open Hub”</li>
+</ol>
+<img alt="_images/11.png" src="_images/11.png" />
+<ol class="arabic simple" start="2">
+<li>点击右上角”SIGN UP”进行注册，然后登录</li>
+</ol>
+<img alt="_images/21.png" src="_images/21.png" />
+<ol class="arabic simple" start="3">
+<li>登录成功后，在地图上框出所要调查的区域，从左侧选择卫星以及数据属性，点击搜索按钮就可以找到需要的数据：</li>
+</ol>
+<div class="admonition tip">
+<p class="first admonition-title">小技巧</p>
+<p class="last">关于数据产品的说明可以到 <a class="reference external" href="https://scihub.copernicus.eu/userguide/">SciHub帮助页面</a> 查看</p>
+</div>
+<img alt="_images/31.png" src="_images/31.png" />
+<ol class="arabic simple" start="4">
+<li>查看列表，选择适合的数据，可点击购物车，将所选数据批量下载；也可直接点击下载单个数据</li>
+</ol>
+<img alt="_images/41.png" src="_images/41.png" />
 </div>
 <div class="section" id="id5">
-<h2>常用领域<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h2>
+<h2>数据处理<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h2>
+<ul class="simple">
+<li>Sentinel数据需要使用 <a class="reference external" href="http://step.esa.int/main/download/">SNAP</a> 软件进行格式转化为ENVI可以打开的格式。</li>
+<li>如有进行大气校正的需要，可以使用 <a class="reference external" href="http://step.esa.int/main/third-party-plugins-2/sen2cor/">sen2cor</a> 进行处理。</li>
+</ul>
 </div>
 <div class="section" id="id6">
 <h2>使用案例<a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h2>
+<blockquote>
+<div><a class="reference download internal" href="_downloads/使用Sentinel数据提取北京稻香湖地区玉米地.pdf" download=""><code class="xref download docutils literal"><span class="pre">使用Sentinel数据提取北京稻香湖地区玉米地.pdf</span></code></a></div></blockquote>
+<p>如果你有更多的资料，欢迎 <a class="reference internal" href="index.html#id4"><span class="std std-ref">帮助完善文档</span></a></p>
 </div>
 </div>
 
@@ -203,7 +329,7 @@
         <a href="AVHRR.html" class="btn btn-neutral float-right" title="AVHRR" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="MODIS.html" class="btn btn-neutral" title="MODIS" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="MODIS.html" class="btn btn-neutral" title="MODIS 传感器" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -212,7 +338,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; 版权所有 2017, gongxr.
+        &copy; Copyright 2017, gongxr.
 
     </p>
   </div>

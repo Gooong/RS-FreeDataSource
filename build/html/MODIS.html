@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>MODIS &mdash; RS Free Data Source 0.0.1 文档</title>
+  <title>MODIS 传感器 &mdash; RS Free Data Source 0.0.1 文档</title>
   
 
   
@@ -92,19 +92,19 @@
             
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="Landsat.html">Landsat系列</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">MODIS</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">MODIS 传感器</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#id1">数据概况</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#id2">波段介绍</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id3">下载方法</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id4">数据样例</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id5">常用领域</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">常用领域</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">下载方法</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id5">数据处理</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#id6">使用案例</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Sentinel.html">Sentinel(哨兵系列)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="AVHRR.html">AVHRR</a></li>
 <li class="toctree-l1"><a class="reference internal" href="CBERS.html">CBERS(中巴地球资源卫星)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ASTER.html">ASTER</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ASTER.html">ASTER 传感器</a></li>
 </ul>
 
             
@@ -149,7 +149,7 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>MODIS</li>
+      <li>MODIS 传感器</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -169,24 +169,302 @@
            <div itemprop="articleBody">
             
   <div class="section" id="modis">
-<h1>MODIS<a class="headerlink" href="#modis" title="永久链接至标题">¶</a></h1>
+<h1>MODIS 传感器<a class="headerlink" href="#modis" title="永久链接至标题">¶</a></h1>
 <div class="section" id="id1">
 <h2>数据概况<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
+<p>MODIS是Terra和Aqua卫星上搭载的主要传感器之一，两颗星相互配合每1-2天可重复观测整个地球表面，得到36个波段的观测数据。</p>
+<p>MODIS数据产品按处理级别划分，可以分为以下5种：</p>
+<ul class="simple">
+<li>0级产品：也称原始数据;</li>
+<li>1级产品：指L1A数据，已经被赋予定标参数;</li>
+<li>2级产品：经过定标定位后数据，本系统产品是国际标准 的EOS-HDF格式。包含所有波段数据，是应用比较广泛的一类数据。;</li>
+<li>3级产品：在1B数据的基础上，对由遥感器成像过程产生的边缘畸变(Bowtie效应)进行校正，产生L3级产品;</li>
+<li>4级产品：由参数文件提供的参数，对图像进行几何纠正，辐射校正，使图像的每一点都有精确的地理编码、反射率和辐射率。L4级产品的MODIS图像进行不同时相的匹配时，误差小于1个像元。该级产品是应用级产品不可缺少的基础;</li>
+<li>5级及以上产品：根据各种应用模型开发L5级产品。</li>
+</ul>
 </div>
 <div class="section" id="id2">
 <h2>波段介绍<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<p>MODIS数据的主要特点为：</p>
+<ol class="arabic simple">
+<li>全球免费；</li>
+<li>光谱范围广，共有36个波段，光谱范围从0.4um-14.4um；</li>
+<li>重访周期短，TERRA和AQUA卫星都是太阳同步极轨卫星，TERRA在地方时上午过境，AQUA在地方时下午过境。TERRA与AQUA上的MODIS数据在时间更新频率上相配合，加上晚间过境数据，对于接收MODIS数据来说可以得到每天最少2次白天和2次黑夜更新数据。这样的数据更新频率，对实时地球观测和应急处理（例如森林和草原火灾监测和救灾）有较大的实用价值。</li>
+</ol>
+<table border="1" class="docutils">
+<colgroup>
+<col width="15%" />
+<col width="31%" />
+<col width="18%" />
+<col width="24%" />
+<col width="13%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>波段号</td>
+<td>主要应用</td>
+<td>分辨率(m)</td>
+<td>波段范围(μm)</td>
+<td>信噪比</td>
+</tr>
+<tr class="row-even"><td>1</td>
+<td>植被叶绿素吸收</td>
+<td>250</td>
+<td>0.620-0.670</td>
+<td>128</td>
+</tr>
+<tr class="row-odd"><td>2</td>
+<td>云和植被覆盖变换</td>
+<td>250</td>
+<td>0.841-0.876</td>
+<td>201</td>
+</tr>
+<tr class="row-even"><td>3</td>
+<td>土让植被差异</td>
+<td>500</td>
+<td>0.459-0.479</td>
+<td>243</td>
+</tr>
+<tr class="row-odd"><td>4</td>
+<td>绿色植被</td>
+<td>500</td>
+<td>0.545-0.565</td>
+<td>228</td>
+</tr>
+<tr class="row-even"><td>5</td>
+<td>叶面/树冠差异</td>
+<td>500</td>
+<td>1.230-0-1.250</td>
+<td>74</td>
+</tr>
+<tr class="row-odd"><td>6</td>
+<td>雪/云差异</td>
+<td>500</td>
+<td>1.628-1.652</td>
+<td>275</td>
+</tr>
+<tr class="row-even"><td>7</td>
+<td>陆地和云的性质</td>
+<td>500</td>
+<td>2.105-2.155</td>
+<td>110</td>
+</tr>
+<tr class="row-odd"><td>8</td>
+<td>叶绿素</td>
+<td>1000</td>
+<td>0.405-0.420</td>
+<td>880</td>
+</tr>
+<tr class="row-even"><td>9</td>
+<td>叶绿素</td>
+<td>1000</td>
+<td>0.438-0.448</td>
+<td>838</td>
+</tr>
+<tr class="row-odd"><td>10</td>
+<td>叶绿素</td>
+<td>1000</td>
+<td>0.483-0.493</td>
+<td>802</td>
+</tr>
+<tr class="row-even"><td>11</td>
+<td>叶绿素</td>
+<td>1000</td>
+<td>0.526-0.536</td>
+<td>754</td>
+</tr>
+<tr class="row-odd"><td>12</td>
+<td>沉淀物</td>
+<td>1000</td>
+<td>0.546-0.556</td>
+<td>750</td>
+</tr>
+<tr class="row-even"><td>13</td>
+<td>沉淀物，大气层</td>
+<td>1000</td>
+<td>0.662-0.672</td>
+<td>910</td>
+</tr>
+<tr class="row-odd"><td>14</td>
+<td>叶绿素荧光</td>
+<td>1000</td>
+<td>0.673-0.683</td>
+<td>1087</td>
+</tr>
+<tr class="row-even"><td>15</td>
+<td>气溶胶性质</td>
+<td>1000</td>
+<td>0.743-0.753</td>
+<td>586</td>
+</tr>
+<tr class="row-odd"><td>16</td>
+<td>气溶胶/大气层性质</td>
+<td>1000</td>
+<td>0.862-0.877</td>
+<td>516</td>
+</tr>
+<tr class="row-even"><td>17</td>
+<td>云/大气层性质</td>
+<td>1000</td>
+<td>0.890-0.920</td>
+<td>167</td>
+</tr>
+<tr class="row-odd"><td>18</td>
+<td>云/大气层性质</td>
+<td>1000</td>
+<td>0.931-0.941</td>
+<td>57</td>
+</tr>
+<tr class="row-even"><td>19</td>
+<td>云/大气层性质</td>
+<td>1000</td>
+<td>0.915-0.965</td>
+<td>250</td>
+</tr>
+<tr class="row-odd"><td>20</td>
+<td>洋面温度</td>
+<td>1000</td>
+<td>3.660-3.840</td>
+<td>0.05</td>
+</tr>
+<tr class="row-even"><td>21</td>
+<td>森林火灾/火山</td>
+<td>1000</td>
+<td>3.929-3.989</td>
+<td>2</td>
+</tr>
+<tr class="row-odd"><td>22</td>
+<td>云/地表温度</td>
+<td>1000</td>
+<td>3.929-3.989</td>
+<td>0.07</td>
+</tr>
+<tr class="row-even"><td>23</td>
+<td>云/地表温度</td>
+<td>1000</td>
+<td>4.020-4.080</td>
+<td>0.07</td>
+</tr>
+<tr class="row-odd"><td>24</td>
+<td>对流层温度/云片</td>
+<td>1000</td>
+<td>4.433-4.498</td>
+<td>0.25</td>
+</tr>
+<tr class="row-even"><td>25</td>
+<td>对流层温度/云片</td>
+<td>1000</td>
+<td>4.482-4.549</td>
+<td>0.25</td>
+</tr>
+<tr class="row-odd"><td>26</td>
+<td>红外云探测</td>
+<td>1000</td>
+<td>1.360-1.390</td>
+<td>150</td>
+</tr>
+<tr class="row-even"><td>27</td>
+<td>对流层中层湿度</td>
+<td>1000</td>
+<td>6.535-6.895</td>
+<td>0.25</td>
+</tr>
+<tr class="row-odd"><td>28</td>
+<td>对流层中层湿度</td>
+<td>1000</td>
+<td>7.175-7.475</td>
+<td>0.25</td>
+</tr>
+<tr class="row-even"><td>29</td>
+<td>表面温度</td>
+<td>1000</td>
+<td>8.400-8.700</td>
+<td>0.05</td>
+</tr>
+<tr class="row-odd"><td>30</td>
+<td>臭氧总量</td>
+<td>1000</td>
+<td>9.580-9.880</td>
+<td>0.25</td>
+</tr>
+<tr class="row-even"><td>31</td>
+<td>云/表面温度</td>
+<td>1000</td>
+<td>10.780-11.280</td>
+<td>0.05</td>
+</tr>
+<tr class="row-odd"><td>32</td>
+<td>云高和表面温度</td>
+<td>1000</td>
+<td>11.770-12.270</td>
+<td>0.05</td>
+</tr>
+<tr class="row-even"><td>33</td>
+<td>云高和云片</td>
+<td>1000</td>
+<td>13.185-13.485</td>
+<td>0.25</td>
+</tr>
+<tr class="row-odd"><td>34</td>
+<td>云高和云片</td>
+<td>1000</td>
+<td>13.485-13.785</td>
+<td>0.25</td>
+</tr>
+<tr class="row-even"><td>35</td>
+<td>云高和云片</td>
+<td>1000</td>
+<td>13.785-14.085</td>
+<td>0.25</td>
+</tr>
+<tr class="row-odd"><td>36</td>
+<td>云高和云片</td>
+<td>1000</td>
+<td>14.085-14.385</td>
+<td>0.35</td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="section" id="id3">
-<h2>下载方法<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
+<h2>常用领域<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
+<p>MODIS的多波段数据可以同时提供反映陆地表面状况、云边界、云特性、海洋水色、浮游植物、生物地理、化学、大气中水汽、气溶胶、地表温度、云顶温度、大气温度、臭氧和云顶高度等特征的信息，各个波段用途可参见 <a class="reference internal" href="#id2">波段介绍</a></p>
 </div>
 <div class="section" id="id4">
-<h2>数据样例<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h2>
+<h2>下载方法<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h2>
+<p>本文档介从 <a class="reference external" href="https://ladsweb.modaps.eosdis.nasa.gov/">NASA</a> 下载数据的方法：</p>
+<ol class="arabic simple">
+<li>打开 LAADS 网站：<a class="reference external" href="https://ladsweb.modaps.eosdis.nasa.gov/">https://ladsweb.modaps.eosdis.nasa.gov/</a></li>
+</ol>
+<img alt="_images/1.png" src="_images/1.png" />
+<ol class="arabic simple" start="2">
+<li>进入 <strong>“Data DISCOVERY/Find Data”</strong></li>
+</ol>
+<img alt="_images/2.png" src="_images/2.png" />
+<ol class="arabic simple" start="3">
+<li>Product/Select a Sensor，可以根据需要的传感器选择下载，如选择：<strong>Aqua/MYD021KM</strong></li>
+</ol>
+<img alt="_images/3.png" src="_images/3.png" />
+<ol class="arabic simple" start="4">
+<li>点击顶栏的”TIME”，添加筛选的时间段</li>
+</ol>
+<img alt="_images/4.png" src="_images/4.png" />
+<ol class="arabic simple" start="5">
+<li>下一步选择”LOCATION”，右侧有多种方法可以用来选择范围</li>
+</ol>
+<img alt="_images/5.png" src="_images/5.png" />
+<ol class="arabic simple" start="6">
+<li>点击”FILES”，即可看到查询到的数据列表，点击”Download”即可直接下载</li>
+</ol>
+<img alt="_images/6.png" src="_images/6.png" />
 </div>
 <div class="section" id="id5">
-<h2>常用领域<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h2>
+<h2>数据处理<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h2>
+<p>使用 Envi软件 <strong>“File/open external file/Generic Formats/HDF”</strong> ，即可打开外部文件格式</p>
 </div>
 <div class="section" id="id6">
 <h2>使用案例<a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h2>
+<p><a class="reference download internal" href="_downloads/使用MODIS数据进行火点识别.pdf" download=""><code class="xref download docutils literal"><span class="pre">使用MODIS数据进行火点识别.pdf</span></code></a></p>
+<p>如果你有更多的资料，欢迎 <a class="reference internal" href="index.html#id4"><span class="std std-ref">帮助完善文档</span></a></p>
 </div>
 </div>
 
@@ -212,7 +490,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; 版权所有 2017, gongxr.
+        &copy; Copyright 2017, gongxr.
 
     </p>
   </div>
