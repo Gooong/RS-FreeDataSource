@@ -46,7 +46,7 @@
 
 贡献者
 ^^^^^^^^^^^^^
-gongxr, zhongt
+gongxr, zhongt, guh
 
 目录
 ------------
