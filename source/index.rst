@@ -27,13 +27,6 @@
   想找到适合应用的数据源？在搜索框中直接搜索应用即可，例如搜索"**植 被**"，即可找到与之相关的数据源。
 
 
-.. _帮助完善文档:
-
-帮助完善文档
-^^^^^^^^^^^^^^^^
-由于资料有限，初期文档只能覆盖常用的几个数据源，欢迎帮助完善或更新文档内容，点击右上角 ``Edit on GitHub`` 进入 `GitHub  <https://github.com/Gooong/RS-FreeDataSource>`_ 即可进行编辑讨论。
-
-
 版权声明
 ^^^^^^^^^
 
@@ -41,6 +34,15 @@
 
 - 文档链接：http://rs-freedatasource.readthedocs.io
 - GitHub地址：https://github.com/Gooong/RS-FreeDataSource
+
+
+.. _帮助完善文档:
+
+帮助完善文档
+^^^^^^^^^^^^^^^^
+
+.. note::
+  由于资料有限，初期文档只能覆盖常用的几个数据源，欢迎帮助完善或更新文档内容，点击右上角 ``Edit on GitHub`` 进入 `GitHub  <https://github.com/Gooong/RS-FreeDataSource>`_ 即可进行编辑讨论。
 
 贡献者
 ^^^^^^^^^^^^^
