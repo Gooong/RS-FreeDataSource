@@ -92,7 +92,7 @@ Sentinel(哨兵系列)
 数据处理
 ----------
 
-- Sentinel数据需要使用 `SNAP <http://step.esa.int/main/download/>`_ 软件进行格式转化为ENVI可以打开的格式。
+- Sentinel数据需要使用 `SNAP <http://step.esa.int/main/download/>`_ 软件，把格式转化为ENVI支持的格式。
 - 如有进行大气校正的需要，可以使用 `sen2cor <http://step.esa.int/main/third-party-plugins-2/sen2cor/>`_ 进行处理。
 
 
