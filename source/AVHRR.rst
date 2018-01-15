@@ -68,23 +68,23 @@ NOAA卫星年表
 .. Tip::
   使用gmail或学校邮箱邮箱进行注册，收邮件可能会快一些
 
-.. image:: _static/img/AVHRR/EarthExplorer.*
+.. image:: _static/img/AVHRR/EarthExplorer.png
 
 2. 左侧标签栏点击"Search Criteria"，选择合适的影像范围和时间，可以通过搜索地点或输入坐标来选择范围
 
-.. image:: _static/img/AVHRR/Select.*
+.. image:: _static/img/AVHRR/Select.png
 
 3. 影像时间和范围确定后，点击"DataSet"进入数据集选择菜单，在出现的数据列表中选择"Landsat"，并勾选自己想要下载的数据集
 
-.. image:: _static/img/AVHRR/DataSet.*
+.. image:: _static/img/AVHRR/DataSet.png
 
 4. 数据集确定后，点击"Result"，即可查看查询结果；若想根据云量等继续筛选影像，点击"Additional Criteria"设置筛选条件
 
-.. image:: _static/img/AVHRR/Result.*
+.. image:: _static/img/AVHRR/Result.png
 
 5. 查询结果如图所示，在每幅图像下点击黄色符号即可将该图像加入订单；若对查询结果不满意，可以点击左上侧标签栏返回修改查询条件
 
-.. image:: _static/img/AVHRR/SearchResult.*
+.. image:: _static/img/AVHRR/SearchResult.png
 
 6. 随后点击"View Item Basket"-->"Proceed To Checkout"-->"Submit Order"，即可完成提交并进行下载
 

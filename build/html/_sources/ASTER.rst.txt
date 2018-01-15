@@ -121,23 +121,23 @@ ASTER传感器波段情况
 .. Tip::
   使用gmail或学校邮箱邮箱进行注册，收邮件可能会快一些
 
-.. image:: _static/img/ASTER/EarthExplorer.*
+.. image:: _static/img/ASTER/EarthExplorer.png
 
 2. 左侧标签栏点击"Search Criteria"，选择合适的影像范围和时间，可以通过搜索地点或输入坐标来选择范围
 
-.. image:: _static/img/ASTER/Select.*
+.. image:: _static/img/ASTER/Select.png
 
 3. 影像时间和范围确定后，点击"DataSet"进入数据集选择菜单，在出现的数据列表中选择"Landsat"，并勾选自己想要下载的数据集
 
-.. image:: _static/img/ASTER/DataSet.*
+.. image:: _static/img/ASTER/DataSet.png
 
 4. 数据集确定后，点击"Result"，即可查看查询结果；若想根据云量等继续筛选影像，点击"Additional Criteria"设置筛选条件
 
-.. image:: _static/img/ASTER/Result.*
+.. image:: _static/img/ASTER/Result.png
 
 5. 查询结果如图所示，在每幅图像下点击下载符号即可进行下载
 
-.. image:: _static/img/ASTER/Download.*
+.. image:: _static/img/ASTER/Download.png
 
 
 数据处理

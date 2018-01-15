@@ -187,27 +187,27 @@ Landsat系列
 .. Tip::
   使用gmail或学校邮箱进行注册，收邮件可能会快一些。
 
-.. image:: _static/img/Landsat/EarthExplorer.*
+.. image:: _static/img/Landsat/EarthExplorer.png
 
 2. 左侧标签栏点击"Search Criteria"，选择合适的影像范围和时间，可以通过搜索地点或输入坐标来选择范围
 
-.. image:: _static/img/Landsat/Select.*
+.. image:: _static/img/Landsat/Select.png
 
 3. 影像时间和范围确定后，点击"DataSet"进入数据集选择菜单，在出现的数据列表中选择"Landsat"，并勾选自己想要下载的数据集
 
-.. image:: _static/img/Landsat/DataSet.*
+.. image:: _static/img/Landsat/DataSet.png
 
 4. 数据集确定后，点击"Result"，即可查看查询结果；若想根据云量等继续筛选影像，点击"Additional Criteria"设置筛选条件
 
-.. image:: _static/img/Landsat/Result.*
+.. image:: _static/img/Landsat/Result.png
 
 5. 查询结果如图所示，在每幅图像下点击“**购物车**”状符号即可将该图像加入订单；若对查询结果不满意，可以点击左上侧标签栏返回修改查询条件
 
-.. image:: _static/img/Landsat/SearchResult.*
+.. image:: _static/img/Landsat/SearchResult.png
 
 6. 随后点击 **"View Item Basket"-->"Proceed To Checkout"-->"Submit Order"**，即可完成提交
 
-.. image:: _static/img/Landsat/ViewItemBasket.*
+.. image:: _static/img/Landsat/ViewItemBasket.png
 
 7. 订单提交后，等待数据处理(可能会处理几天)，注意查看注册邮箱，一般USGS发送第三封邮件时会附带下载链接，链接过期会失效，注意及时下载。
 
