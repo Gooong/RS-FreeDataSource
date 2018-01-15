@@ -1,6 +1,8 @@
 # RS-FreeDataSource
 
-介绍免费遥感数据源的下载和使用方法，包括下列数据：
+介绍免费遥感数据源的下载和使用方法： http://rs-freedatasource.readthedocs.io
+
+包括下列数据：
 
 - Landsat系列
 - MODIS 传感器
@@ -17,4 +19,4 @@
 - 数据处理
 - 使用案例
 
-文档地址：http://rs-freedatasource.readthedocs.io ，欢迎帮助完善文档。
+欢迎帮助完善文档！
